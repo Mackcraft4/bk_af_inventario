@@ -1,2 +1,4 @@
-package com.paramonga.ssff.entities;public class VwFabConPdCab {
+package com.paramonga.ssff.entities;
+
+public class VwFabConPdCab {
 }
