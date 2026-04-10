@@ -1,20 +1,20 @@
 package com.paramonga.ssff;
 
-// import org.mybatis.spring.annotation.MapperScan;
-
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.info.Info;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
-//@MappedTypes(Users.class)
-//@MapperScan("com.ssff.mapper")
+@OpenAPIDefinition(
+		info = @Info(
+				title = "Inventario de Activo Fijo",
+				version = "1.0",
+				description = "Servicios para el APP y Reportes del -Inventario de Activo Fijo-"
+		)
+)
 @SpringBootApplication
-@EnableAutoConfiguration
 public class DemoApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
-
 }
